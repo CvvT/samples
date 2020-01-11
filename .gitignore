@@ -1,0 +1,5 @@
+*.o
+*.so
+*.elf
+patched/
+cgc2elf/cqe-challenges/

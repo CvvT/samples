@@ -57,6 +57,8 @@ bool IO::readline(size_t max_size)
         i++;
     }
 
+    if (rx == 0) exit(2);
+    
     if (i == max_size || i == 0)
         return false;
 
@@ -76,6 +78,8 @@ int IO::readnum(size_t max_size)
 
         i++;
     }
+
+    if (rx == 0) exit(2);
 
     if (i == max_size || i == 0)
         return 0;
